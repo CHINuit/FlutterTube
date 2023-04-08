@@ -23,7 +23,7 @@ class YoutubeApi {
     var client = http.Client();
     if (_searchToken != null && query == lastQuery) {
       var url =
-          'https://www.youtube.com/youtubei/v1/search?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8';
+          'https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=relevance&key=AIzaSyA2u2oFi5jIeWC6tzBRKmRH8IgnYW3loGM';
 
       return retry(() async {
         var body = {
